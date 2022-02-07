@@ -29,15 +29,21 @@
 
 <style scoped>
 /**
-COLORES YOBILINGUE
+COLORES RICARDO PALMA
 
-AZUL #014A81 
-ROJO #E8113B
-NARANJA #FF9F41
+AZUL
+#2e3192
+rgb(46, 49, 146)
 
-COLORES WEB
-AZUL #073E67
+ROJO
+#e71e23
+rgb(231,30,35)
+
+DORADO
+#BC9C22
+rgb(180, 154, 54)
 **/
+
 .v-main {
   background-image: url("~@/assets/img/bgMain.png");
   background-attachment: fixed;
@@ -85,7 +91,7 @@ export default {
   watch: {
     fab(value) {
       if (value) {
-        this.color = "#073E67";
+        this.color = "#ffffff";
         this.flat = false;
       } else {
         this.color = "transparent";

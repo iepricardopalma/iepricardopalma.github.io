@@ -1,28 +1,11 @@
 <template>
   <section id="hero">
-    <v-parallax dark src="@/assets/img/languagesPoster2.png" height="750">
-      <v-row align="center" justify="center">
+    <v-img contain max-width="100%" src="@/assets/img/home_matricula2022_2.png">
+      <v-row class="fill-height" align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Yo Bilingue</h1>
-              <h1 class="font-weight-light">
-                ¡Aprende el vocabulario básico de <b>seis idiomas</b>! <br />
-                Disfruta de un espacio <b>gratuito</b> donde podrás <br />
-                ampliar tus conocimientos en idiomas.
-              </h1>
-              <v-btn
-                rounded
-                outlined
-                large
-                dark
-                @click="$vuetify.goTo('#features')"
-                class="mt-5"
-              >
-                Conócenos
-                <v-icon class="ml-2">mdi-arrow-down</v-icon>
-              </v-btn>
-              <div class="video d-flex align-center py-4">
+              <!--div class="video d-flex align-center py-4">
                 <a @click.stop="dialog = true" class="playBut">
                   <svg
                     version="1.1"
@@ -63,16 +46,26 @@
                   </svg>
                 </a>
                 <p class="body-2 ml-2 mb-0">Dale play ;)</p>
-              </div>
+              </div-->
             </v-col>
-            <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
+            <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down">
+              <v-btn
+                rounded
+                outlined
+                large
+                dark
+                @click="$vuetify.goTo('#features')"
+                class="mt-5"
+                > Conócenos <v-icon class="ml-2">mdi-arrow-down</v-icon>
+              </v-btn>
+            </v-col>
           </v-row>
         </v-col>
       </v-row>
       <div class="svg-border-waves text-white">
         <v-img src="@/assets/img/borderWaves.svg" />
       </div>
-    </v-parallax>
+    </v-img>
     <div id="features"></div>
     <v-dialog v-model="dialog" max-width="640px">
       <v-card>

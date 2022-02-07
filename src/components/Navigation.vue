@@ -42,11 +42,10 @@
       app
       :color="color"
       :flat="flat"
-      dark
       class="px-15"
       :class="{ expand: flat }">
       <v-toolbar-title>
-        <v-img src="@/assets/img/logoYob.png" max-width="196px" />
+        <v-img src="@/assets/img/rp_membrete.png" max-width="196px" />
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon
@@ -74,9 +73,12 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .v-toolbar {
   transition: 0.6s;
+  .v-btn {
+    color: #2e3192;
+  }
 }
 .expand {
   height: 80px !important;
